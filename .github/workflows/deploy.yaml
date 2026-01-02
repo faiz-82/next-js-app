@@ -15,3 +15,4 @@ jobs:
     - run: docker build . -t faiz1232/next-js-app
     - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin 
     - run: docker push faiz1232/next-js-app:latest
+    
